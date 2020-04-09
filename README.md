@@ -15,7 +15,7 @@ C8WHdg==
 ```
 
 **To attack this key file first extract the necessary elements**<br />
-Create the following bash script `ssh-keyparse.sh` as follows:<br />
+Create a bash script named `ssh-keyparse.sh` as follows:<br />
 ```bash
 #!/usr/bin/bash
 
