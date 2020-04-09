@@ -220,8 +220,6 @@ The output will look something like this:<br />
 **Compile the following cracking tool**<br />
 `gcc ssh-keycrack.c -o ssh-keycrack -lcrypto -lpthread`<br />
 ```c
-// gcc ssh-keycrack.c -o ssh-keycrack -lcrypto -lpthread
-
 /*
    program: ssh-keycrack
    author:  Bill Chaison
