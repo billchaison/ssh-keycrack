@@ -219,6 +219,8 @@ The output will look something like this:<br />
 
 **Compile the following cracking tool**<br />
 `gcc ssh-keycrack.c -o ssh-keycrack -lcrypto -lpthread`<br />
+(or optimized for SSE2)<br />
+`gcc -O3 -msse2 ssh-keycrack.c -o ssh-keycrack -lcrypto -lpthread`<br />
 ```c
 /*
    program: ssh-keycrack
