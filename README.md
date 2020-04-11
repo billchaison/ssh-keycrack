@@ -218,9 +218,7 @@ The output will look something like this:<br />
 `aes192-ctr:16:ba9aca016b855b7f27b68a6e930ba69f:a1f3d58cbb7aaab16a9ad205d3111d73e5b5722e2b69a675a23a1f29f2df35f7`
 
 **Compile the following cracking tool**<br />
-`gcc ssh-keycrack.c -o ssh-keycrack -lcrypto -lpthread`<br />
-(or optimized for SSE2)<br />
-`gcc -O3 -msse2 ssh-keycrack.c -o ssh-keycrack -lcrypto -lpthread`<br />
+`gcc -O3 ssh-keycrack.c -o ssh-keycrack -lcrypto -lpthread`<br />
 ```c
 /*
    program: ssh-keycrack
