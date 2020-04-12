@@ -616,7 +616,7 @@ void *cracker(void *arg)
          if(*(pt + len) < ' ' || *(pt + len) > '~') *(pt + len) = ' ';
       }
       *(pt + --len) = 0;
-      if(strstr(pt, "ed25519"))
+      if(strstr(pt, "ssh-ed25519"))
       {
          run = 0;
          printf("\nPassword = %s\n", pcb->pw);
