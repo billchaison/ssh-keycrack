@@ -609,6 +609,19 @@ void *cracker(void *arg)
       run = 0;
       printf("\nPassword = %s\n", pcb->pw);
    }
+   else
+   {
+      for(len = 0; len < (CT2BIN * 2); len++)
+      {
+         if(*(pt + len) < ' ' || *(pt + len) > '~') *(pt + len) = ' ';
+      }
+      *(pt + --len) = 0;
+      if(strstr(pt, "ed25519"))
+      {
+         run = 0;
+         printf("\nPassword = %s\n", pcb->pw);
+      }
+   }
    free(pcb);
    pthread_exit(NULL);
 }
